@@ -1,3 +1,5 @@
+require 'pry'
+
 def my_hash_creator(key, value)
   new_hash = {
     key => value
@@ -11,5 +13,6 @@ end
 def update_counting_hash(hash, key)
   if !hash[key]
     hash[key] = 1
+    binding.pry
   end
 end
